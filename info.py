@@ -26,7 +26,7 @@ BOT_TOKEN = environ['BOT_TOKEN']
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
-PICS = (environ.get('PICS', 'https://telegra.ph/file/7e56d907542396289fee4.jpg https://telegra.ph/file/9aa8dd372f4739fe02d85.jpg https://telegra.ph/file/adffc5ce502f5578e2806.jpg https://telegra.ph/file/6937b60bc2617597b92fd.jpg https://telegra.ph/file/09a7abaab340143f9c7e7.jpg https://telegra.ph/file/5a82c4a59bd04d415af1c.jpg https://telegra.ph/file/323986d3bd9c4c1b3cb26.jpg https://telegra.ph/file/b8a82dcb89fb296f92ca0.jpg https://telegra.ph/file/31adab039a85ed88e22b0.jpg https://telegra.ph/file/c0e0f4c3ed53ac8438f34.jpg https://telegra.ph/file/eede835fb3c37e07c9cee.jpg https://telegra.ph/file/e17d2d068f71a9867d554.jpg https://telegra.ph/file/8fb1ae7d995e8735a7c25.jpg https://telegra.ph/file/8fed19586b4aa019ec215.jpg https://telegra.ph/file/8e6c923abd6139083e1de.jpg https://telegra.ph/file/0049d801d29e83d68b001.jpg')).split()
+PICS = (environ.get('PICS', 'https://telegra.ph/file/476058f3baa4938dbfbd0.jpg https://telegra.ph/file/2bc544eb246122f3609ea.jpg https://telegra.ph/file/c955eeb0b8a75fb58f265.jpg https://telegra.ph/file/78668bc79807eb65572aa.jpg  https://telegra.ph/file/cd96bf3b3077e284e3ef0.jpg https://telegra.ph/file/d93cae65c5b59c86e28e5.jpg https://telegra.ph/file/933f4ba0f9e994425bdd5.jpg https://telegra.ph/file/c9c4a8228b673bbec374a.jpg https://telegra.ph/file/923cd4bf1bb81a02fb35a.jpg https://telegra.ph/file/091915c16744c58d1fcd1.jpg https://telegra.ph/file/7989397c55683c385bee5.jpg https://telegra.ph/file/a19067fd506d3a11d07b0.jpg https://telegra.ph/file/fac91621139fa30bdf7f1.jpg https://telegra.ph/file/ed2bda547d50708a7dca0.jpg')).split()
  
 # Admins, Channels & Users
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
@@ -49,7 +49,7 @@ SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'LazyDeveloper')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "False")), False)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "⚡<b>File uploaded by [Movies Adaa™](https://t.me/real_MoviesAdda3)</b>⚡\n\n🎦 <b>File Name: </b> ➥  {file_caption} \n⚙️ <b>Size: </b><i>{file_size}</i>\n\n                ❤️<b>WE LOVE YOU</b>❤️\n🔥  ↭ <b>Join Now [MoviesAdda™](https://t.me/real_MoviesAdda3)</b> ↭  🔥")
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "⚡<b>File uploaded by [TSG GROUP™](https://t.me/techsoftgeekgroup)</b>⚡\n\n🎦 <b>File Name: </b> ➥  {file_caption} \n⚙️ <b>Size: </b><i>{file_size}</i>\n\n                ❤️<b>WE LOVE YOU</b>❤️\n🔥  ↭ <b>Join Now [TSG GROUP™](https://t.me/techsoftgeekgroup)</b> ↭  🔥")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>Your Query: {query}</b> \n‌‌‌‌IMDb Data by: @LazyDeveloper \n\n🏷 Title: <a href={url}>{title}</a>\n🎭 Genres: {genres}\n📆 Year: <a href={url}/releaseinfo>{year}</a>\n🌟 Rating: <a href={url}/ratings>{rating}</a> / 10 \n\n♥️ we are nothing without you ♥️ \n\n💛 Please Share Us 💛\n\n⚠️Click on the button 👇 below to get your query privately")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
@@ -72,14 +72,14 @@ REQ_CHANNEL = int(environ.get('REQ_CHANNEL'))
 #ai
 # OPENAI_API = environ.get("OPENAI_API","")
 # AI = is_enabled((environ.get("AI","True")), False)
-# LAZY_AI_LOGS = int(environ.get("LAZY_AI_LOGS","")) #GIVE YOUR NEW LOG CHANNEL ID TO STORE MESSAGES THAT THEY SEARCH IN BOT PM.... [ i have added this to keep an eye on the users message, to avoid misuse of LazyPrincess ]
+# LAZY_AI_LOGS = int(environ.get("LAZY_AI_LOGS","-1002082219604")) #GIVE YOUR NEW LOG CHANNEL ID TO STORE MESSAGES THAT THEY SEARCH IN BOT PM.... [ i have added this to keep an eye on the users message, to avoid misuse of LazyPrincess ]
 
 # Requested Content template variables ---
-ADMIN_USRNM = environ.get('ADMIN_USRNM','real_heros') # WITHOUT @
-MAIN_CHANNEL_USRNM = environ.get('MAIN_CHANNEL_USRNM','real_MoviesAdda3') # WITHOUT @
-DEV_CHANNEL_USRNM = environ.get('DEV_CHANNEL_USRNM','LayDeveloperr') # WITHOUT @
-LAZY_YT_HANDLE = environ.get('LAZY_YT_HANDLE','LayDeveloperr')  # WITHOUT @ [  add only handle - don't add full url  ] 
-MOVIE_GROUP_USERNAME = environ.get('MOVIE_GROUP_USERNAME', "+qAxoGBvSc34yNmU1") #[ without @ ]
+ADMIN_USRNM = environ.get('ADMIN_USRNM','i_m_blogger') # WITHOUT @
+MAIN_CHANNEL_USRNM = environ.get('MAIN_CHANNEL_USRNM','i_m_blogger') # WITHOUT @
+DEV_CHANNEL_USRNM = environ.get('DEV_CHANNEL_USRNM','i_m_blogger') # WITHOUT @
+LAZY_YT_HANDLE = environ.get('LAZY_YT_HANDLE','i_m_blogger')  # WITHOUT @ [  add only handle - don't add full url  ] 
+MOVIE_GROUP_USERNAME = environ.get('MOVIE_GROUP_USERNAME', "i_m_blogger") #[ without @ ]
 
 # Url Shortner
 URL_MODE = is_enabled((environ.get("URL_MODE","True")), False)
@@ -149,11 +149,11 @@ if SELF_DELETE == "True":
 
 # Download Tutorial Button #
 DOWNLOAD_TEXT_NAME = "📥 HOW TO DOWNLOAD 📥"
-DOWNLOAD_TEXT_URL = "https://t.me/LazyDeveloper"
+DOWNLOAD_TEXT_URL = "https://t.me/techsoftgeekgroup"
 
 # Custom Caption Under Button #
 CAPTION_BUTTON = "Get Updates"
-CAPTION_BUTTON_URL = "https://t.me/LazyDeveloper"
+CAPTION_BUTTON_URL = "https://t.me/techsoftgeekgroup"
 
 LOG_STR = "Current Cusomized Configurations are:-\n"
 LOG_STR += ("IMDB Results are enabled, Bot will be showing imdb details for you queries.\n" if IMDB else "IMBD Results are disabled.\n")
