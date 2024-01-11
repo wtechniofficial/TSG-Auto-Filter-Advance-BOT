@@ -121,7 +121,7 @@ async def removethumbnail(client, message):
 
     await db.set_lazy_thumbnail(message.from_user.id, thumbnail=None)
     await message.reply_text(
-        "**🗑️ Okay baby, I deleted your custom thumbnail for url downloading. Now I will apply default thumbnail. ☑**",
+        "**🗑️ Okay bro, I deleted your custom thumbnail for url downloading. Now I will apply default thumbnail. ☑**",
         reply_markup=InlineKeyboardMarkup([
             [InlineKeyboardButton("⚙ ᴄᴏɴғɪɢᴜʀᴇ sᴇᴛᴛɪɴɢs 🎨", callback_data="openSettings")]
         ])
